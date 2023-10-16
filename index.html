@@ -10,7 +10,7 @@
     <!-- Projetos de jardim, rápidos e práticos. -->
     <section class="pt-4 bg-[#145233]">
         <!-- Barra de navegação -->
-        <nav class="flex justify-around items-center text-[#FCFBF0]">
+        <nav class="flex justify-evenly items-center text-[#FCFBF0]">
             <div class="flex gap-4 items-center">
                 <img src="https://picsum.photos/40/50" alt="">
                 <span class="font-title text-xl font-semibold uppercase tracking-wider">Jardinilo</span>
@@ -21,7 +21,21 @@
                 <li><a class="tracking-wider" href="">Contato</a></li>
                 <li><a class="tracking-wider uppercase" href="">Como iniciar um Projeto</a></li>
             </menu>
+            <button class="flex flex-col gap-1 border-slate-300 p-2 rounded-lg border md:hidden">
+                <span class="bg-[#F8FBE8] w-6 h-[3px] rounded-full"></span>
+                <span class="bg-[#F8FBE8] w-6 h-[3px] rounded-full"></span>
+                <span class="bg-[#F8FBE8] w-6 h-[3px] rounded-full"></span>
+            </button>
         </nav>
+        <div class="hidden">
+            <hr class="mt-5">
+            <menu class="flex flex-col gap-1 text-[#FCFBF0] ml-2">
+                <li><a class="tracking-wider" href="">Início</a></li>
+                <li><a class="tracking-wider" href="">Como funciona</a></li>
+                <li><a class="tracking-wider" href="">Contato</a></li>
+                <li><a class="tracking-wider uppercase" href="">Como iniciar um Projeto</a></li>
+            </menu>
+        </div>
         <!-- Conteúdo -->
         <div class="grid lg:grid-cols-2 text-[#FCFBF0] lg:gap-6 md:p-8 place-content-center">
             <div class="grid grid-rows-3 gap-3 max-md:pt-8 max-md:px-4">
