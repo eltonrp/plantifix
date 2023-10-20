@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
     <title>Document</title>
+    <script>
+        const mobileMenu = document.querySelector('.mobile-menu') 
+  
+ function changeMobileMenu() { 
+     mobileMenu.classList.toggle('hidden') 
+ }
+    </script>
 </head>
 <body>
     <!-- Projetos de jardim, rápidos e práticos. -->
@@ -27,7 +34,7 @@
                 <span class="bg-[#F8FBE8] w-6 h-[3px] rounded-full"></span>
             </button>
         </nav>
-        <div class="hidden">
+        <div class="hidden mobile-menu">
             <hr class="mt-5">
             <menu class="flex flex-col gap-1 text-[#FCFBF0] ml-2">
                 <li><a class="tracking-wider" href="">Início</a></li>
