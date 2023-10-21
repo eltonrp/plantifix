@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
     <title>Jardinilo Paisagismo</title>
-    <script>
-        const mobileMenu = document.querySelector('.mobile-menu');
-  
- function changeMobileMenu() { 
-     mobileMenu.classList.toggle('hidden') 
- };
-    </script>
 </head>
 <body>
     <!-- Projetos de jardim, rápidos e práticos. -->
@@ -28,13 +21,13 @@
                 <li><a class="tracking-wider" href="">Contato</a></li>
                 <li><a class="tracking-wider uppercase" href="">Como iniciar um Projeto</a></li>
             </menu>
-            <button class="flex flex-col gap-1 border-slate-300 p-2 rounded-lg border md:hidden" onclick=changeMobileMenu()>
+            <button type="button" id="btn-menu" class="flex flex-col gap-1 border-slate-300 p-2 rounded-lg border md:hidden">
                 <span class="bg-[#F8FBE8] w-6 h-[3px] rounded-full"></span>
                 <span class="bg-[#F8FBE8] w-6 h-[3px] rounded-full"></span>
                 <span class="bg-[#F8FBE8] w-6 h-[3px] rounded-full"></span>
             </button>
         </nav>
-        <div class="hidden mobile-menu">
+        <div id="mobile-menu" class="hidden md:hidden">
             <hr class="mt-5">
             <menu class="flex flex-col gap-1 text-[#FCFBF0] ml-2">
                 <li><a class="tracking-wider" href="">Início</a></li>
@@ -52,7 +45,7 @@
                 <p class="text-2xl font-serif leading-relaxed">
                     Tenha um projeto de jardim com um time de profissionais com ampla experiência em paisagismo. Do tamanho do seu sonho, do tamanho do seu bolso.
                 </p>
-                <button class="flex self-start">Entre em contato</button>
+                <button type="button" class="flex self-start">Entre em contato</button>
             </div>
             <div class="grid place-content-center w-full">
                 <img src="https://picsum.photos/600/450" alt="">
@@ -62,5 +55,13 @@
     <section></section>
     <section></section>
     <section></section>
+    <script>
+        const btnMenu = document.getElementById('btn-menu')
+        const mobileMenu = document.getElementById('mobile-menu')
+        btnMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden')
+        })
+
+    </script>
 </body>
 </html>
