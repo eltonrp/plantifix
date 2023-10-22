@@ -8,47 +8,47 @@
 </head>
 <body>
     <!-- Projetos de jardim, rápidos e práticos. -->
-    <section class="pt-4 bg-[#145233]">
+    <section class="pt-4 bg-green-900">
         <!-- Barra de navegação -->
-        <nav class="flex justify-evenly items-center text-[#FCFBF0]">
+        <nav class="flex justify-around items-center text-amber-50">
             <div class="flex gap-4 items-center">
-                <img src="https://picsum.photos/40/50" alt="">
+                <img src="./img/logotipo-1.webp" alt="logotipo da barra navegação">
                 <span class="font-title text-xl font-semibold uppercase tracking-wider">Jardinilo</span>
             </div>
-            <menu class="flex gap-8 max-md:hidden">
-                <li><a class="tracking-wider" href="">Início</a></li>
-                <li><a class="tracking-wider" href="">Como funciona</a></li>
-                <li><a class="tracking-wider" href="">Contato</a></li>
-                <li><a class="tracking-wider uppercase" href="">Como iniciar um Projeto</a></li>
+            <menu class="flex gap-3 text-lg max-md:hidden">
+                <li><a class="tracking-wider hover:text-amber-100 hover:underline" href="">Início</a></li>
+                <li><a class="tracking-wider hover:text-amber-100 hover:underline" href="">Como funciona</a></li>
+                <li><a class="tracking-wider hover:text-amber-100 hover:underline" href="">Contato</a></li>
+                <li><a class="tracking-wider uppercase hover:text-amber-100 hover:underline" href="">Como iniciar um Projeto</a></li>
             </menu>
-            <button type="button" id="btn-menu" class="flex flex-col gap-1 border-slate-300 p-2 rounded-lg border md:hidden">
-                <span class="bg-[#F8FBE8] w-6 h-[3px] rounded-full"></span>
-                <span class="bg-[#F8FBE8] w-6 h-[3px] rounded-full"></span>
-                <span class="bg-[#F8FBE8] w-6 h-[3px] rounded-full"></span>
+            <button type="button" id="btn-menu" class="flex flex-col gap-1 border-amber-50 p-2 rounded-lg border md:hidden hover:border-gray-400 transition">
+                <span class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
+                <span class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
+                <span class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
             </button>
         </nav>
-        <div id="mobile-menu" class="hidden md:hidden">
+        <div id="mobile-menu" class="hidden md:hidden bg-amber-50 text-green-900">
             <hr class="mt-5">
-            <menu class="flex flex-col gap-1 text-[#FCFBF0] ml-2">
-                <li><a class="tracking-wider" href="">Início</a></li>
-                <li><a class="tracking-wider" href="">Como funciona</a></li>
-                <li><a class="tracking-wider" href="">Contato</a></li>
-                <li><a class="tracking-wider uppercase" href="">Como iniciar um Projeto</a></li>
+            <menu class="flex flex-col gap-1 ml-2 mt-2 text-lg font-semibold">
+                <li><a class="tracking-wider hover:underline hover:text-green-950" href="">Início</a></li>
+                <li><a class="tracking-wider hover:underline hover:text-green-950" href="">Como funciona</a></li>
+                <li><a class="tracking-wider hover:underline hover:text-green-950" href="">Contato</a></li>
+                <li><a class="tracking-wider uppercase hover:underline hover:text-green-950" href="">Como iniciar um Projeto</a></li>
             </menu>
         </div>
         <!-- Conteúdo -->
-        <div class="grid lg:grid-cols-2 text-[#FCFBF0] lg:gap-6 md:p-8 place-content-center">
-            <div class="grid grid-rows-3 gap-3 max-md:pt-8 max-md:px-4">
-                <h1 class="text-5xl font-medium font-title leading-snug">
-                    Projetos de jardim, rápidos e práticos.
+        <div class="grid lg:grid-cols-2 lg:gap-4 text-amber-50 md:p-8 place-items-center-center">
+            <div class="grid grid-rows-3 items-center place-items-start max-md:p-8">
+                <h1 class="lg:text-5xl text-4xl font-medium font-title mb-2">
+                    Projetos de jardim, rápidos e práticos
                 </h1>
-                <p class="text-2xl font-serif leading-relaxed">
+                <p class="md:text-2xl text-xl font-serif">
                     Tenha um projeto de jardim com um time de profissionais com ampla experiência em paisagismo. Do tamanho do seu sonho, do tamanho do seu bolso.
                 </p>
-                <button type="button" class="flex self-start">Entre em contato</button>
+                <button type="button" class="border p-2 rounded-lg hover:border-gray-400 transition">Entre em contato</button>
             </div>
             <div class="grid place-content-center w-full">
-                <img src="https://picsum.photos/600/450" alt="">
+                <img src="./img/jardim-1.webp" alt="ilustração de projeto de jardim">
             </div>
         </div>
     </section>
