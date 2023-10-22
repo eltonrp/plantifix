@@ -12,8 +12,14 @@
         <!-- Barra de navegação -->
         <nav class="flex justify-around items-center text-amber-50">
             <div class="flex gap-4 items-center">
-                <img src="./img/logotipo-1.webp" alt="logotipo da barra navegação">
-                <span class="font-title text-xl font-semibold uppercase tracking-wider">Jardinilo</span>
+                <a href="">
+                    <img src="./img/logotipo-1.webp" alt="logotipo da barra navegação">
+                </a>
+                <span class="font-title text-xl font-semibold uppercase tracking-wider hover:text-amber-100 hover:underline transition">
+                    <a href="">
+                        Jardinilo
+                    </a>
+                </span>
             </div>
             <menu class="flex gap-3 text-lg max-md:hidden">
                 <li><a class="tracking-wider hover:text-amber-100 hover:underline" href="">Início</a></li>
@@ -37,7 +43,7 @@
             </menu>
         </div>
         <!-- Conteúdo -->
-        <div class="grid lg:grid-cols-2 lg:gap-4 text-amber-50 md:p-8 place-items-center-center">
+        <div class="grid lg:grid-cols-2 gap-4 text-amber-50 md:p-8 place-items-center">
             <div class="grid grid-rows-3 items-center place-items-start max-md:p-8">
                 <h1 class="lg:text-5xl text-4xl font-medium font-title mb-2">
                     Projetos de jardim, rápidos e práticos
@@ -52,9 +58,36 @@
             </div>
         </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <!-- Por que você vai amar a gente -->
+    <section class="bg-amber-50 text-green-900 grid lg:grid-cols-2 lg:gap-4 place-items-center p-10">
+        <h1 class="lg:text-5xl text-4xl font-medium font-title mb-2">Porque você vai amar a gente?</h1>
+        <p class="md:text-2xl text-xl font-serif leading-relaxed">
+            Uma foto vale por 1000 palavras e muitas horas do seu tempo.
+            Com a Jardinilo você vai entender de forma muito simples como seu projeto vai ficar depois de implantado. Vivemos em um mundo muito dinâmico, onde muitos profissionais vendem idéias de forma complexa e que exigem muito tempo para sua elaboração. Oferecemos aqui a simplicidade das fotomontagens, sem abrir mão de um jardim elaborado por profissionais do paisagismo, que entendem de plantas e da disposição das mesmas em seu espaço.
+        </p>
+    </section>
+    <!-- Como Funciona -->
+    <section class="pt-4 text-amber-50 bg-green-900 lg:gap-4 md:p-8 grid justify-center">
+        <h1 class="lg:text-5xl text-4xl font-medium font-title mb-2 max-md:p-8">Como funciona?</h1>
+        <div class="grid xl:grid-cols-4 gap-4 max-md:gap-8 text-2xl">
+            <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
+                <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-1.png" alt="Ilustração de Jardim">
+                <figcaption class="p-6">Você nos envia fotos com as medidas dos espaços que pretende transformar</figcaption>
+            </figure>
+            <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
+                <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-2.png" alt="Aperto de mão">
+                <figcaption class="p-6">Você receberá uma proposta de valor com base em sua necessidade</figcaption>
+            </figure>
+            <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
+                <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-3.png" alt="Mulher concentrada">
+                <figcaption class="p-6">Enviamos um formulário que será nosso “norte” para elaborarmos um projeto exatamente do jeito que deseja</figcaption>
+            </figure>
+            <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
+                <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-4.png" alt="Jardim reformado">
+                <figcaption class="p-6">Enviamos as imagens do projeto com toda listagem de plantas para sua implantação. Ah, e caso queira, podemos fazer uma alteração no projeto, sem custo algum!</figcaption>
+            </figure>
+        </div>
+    </section>
     <script>
         const btnMenu = document.getElementById('btn-menu')
         const mobileMenu = document.getElementById('mobile-menu')
