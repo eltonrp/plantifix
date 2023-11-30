@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Navegação -->
-    <header class="bg-green-900 fixed w-full top-0 z-50">
+    <header class="bg-green-900 fixed w-full top-0 z-50 opacity-95">
         <!-- Barra de navegação -->
         <nav class="flex justify-between p-3 items-center text-amber-50">
             <div class="flex gap-4 items-center">
@@ -24,10 +24,10 @@
             </div>
             <menu class="flex text-lg max-lg:hidden gap-8">
                 <li class="flex gap-3 justify-center items-center">
-                    <a class="tracking-wider hover:text-green-500 hover:underline" href="#inicio">Início</a>
+                    <a class="tracking-wider hover:text-green-500 hover:underline" href="#">Início</a>
                     <a class="tracking-wider hover:text-green-500 hover:underline" href="#como-funciona">Como funciona</a>
-                    <a class="tracking-wider hover:text-green-500 hover:underline" href="">Contato</a>
-                    <a class="tracking-wider uppercase hover:text-green-500 hover:underline" href="">Como iniciar um Projeto</a>
+                    <a class="tracking-wider hover:text-green-500 hover:underline" href="#contato">Contato</a>
+                    <a class="tracking-wider uppercase hover:text-green-500 hover:underline" href="#">Como iniciar um Projeto</a>
                 </li>
                 <li class="flex gap-3">
                     <!-- SVG WhatsApp -->
@@ -82,15 +82,13 @@
                     </a>
                 </li>
             </menu>
-                    
-            
-            <button type="button" id="btn-menu" class="flex flex-col gap-1 border-amber-50 p-2 rounded-lg border lg:hidden hover:border-gray-400 transition">
-                <span class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
-                <span class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
-                <span class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
+            <button type="button" id="btn-menu" onclick="onToggleMenu(this)" class="flex flex-col gap-1 border-amber-50 p-2 rounded-lg border lg:hidden hover:border-gray-400 transition">
+                <span id="span1" class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
+                <span id="span2" class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
+                <span id="span3" class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
             </button>
         </nav>
-        <div id="mobile-menu" class="hidden lg:hidden bg-amber-50 text-green-900 opacity-90">
+        <div id="mobile-menu" class="absolute top-[-300%] duration-500 w-full lg:hidden bg-amber-50 text-green-900">
             <hr class="mt-5">
             <menu class="ml-2 mt-2 text-lg font-semibold">
                 <li class="flex flex-col gap-1">
@@ -147,15 +145,14 @@
                     </a>
                     </li>
                 </li>
-                
             </menu>
         </div>
     </header>
     <!-- Projetos de jardim, rápidos e práticos. -->
     <section id="inicio" class="relative pt-16 bg-amber-50">
         <!-- Conteúdo -->
-        <div class="grid lg:grid-cols-2 text-green-900 p-8 place-items-center">
-            <div class="grid grid-rows-3 items-center lg:gap-10">
+        <div class="grid lg:grid-cols-2 text-green-900 md:p-8 place-items-center">
+            <div class="grid grid-rows-3 items-center lg:gap-10 max-md:pt-8 max-md:px-8 lg:pr-8">
                 <h1 class="lg:text-5xl xl:text-6xl 2xl:text-7xl text-4xl font-medium font-title mb-2">
                     Projetos de jardim, rápidos e práticos
                 </h1>
@@ -164,7 +161,7 @@
                 </p>
                 <button type="button" class="max-w-sm border p-2 rounded-lg hover:bg-green-700 transition uppercase bg-green-900 text-amber-50">Entre em contato</button>
             </div>
-            <div class="grid place-content-center w-full">
+            <div class="grid place-content-center max-md:w-full">
                 <img src="./img/jardim-1.webp" alt="ilustração de projeto de jardim">
             </div>
         </div>
@@ -183,23 +180,23 @@
         <div class="grid xl:grid-cols-4 gap-4 max-md:gap-8 text-2xl self-center">
             <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
                 <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-1.png" alt="Ilustração de Jardim">
-                <figcaption class="p-6">Você nos envia fotos com as medidas dos espaços que pretende transformar</figcaption>
+                <figcaption class="p-6 max-md:p-8">Você nos envia fotos com as medidas dos espaços que pretende transformar</figcaption>
             </figure>
             <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
                 <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-2.png" alt="Aperto de mão">
-                <figcaption class="p-6">Você receberá uma proposta de valor com base em sua necessidade</figcaption>
+                <figcaption class="p-6 max-md:p-8">Você receberá uma proposta de valor com base em sua necessidade</figcaption>
             </figure>
             <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
                 <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-3.png" alt="Mulher concentrada">
-                <figcaption class="p-6">Enviamos um formulário que será nosso “norte” para elaborarmos um projeto exatamente do jeito que deseja</figcaption>
+                <figcaption class="p-6 max-md:p-8">Enviamos um formulário que será nosso “norte” para elaborarmos um projeto exatamente do jeito que deseja</figcaption>
             </figure>
             <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
                 <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-4.png" alt="Jardim reformado">
-                <figcaption class="p-6">Enviamos as imagens do projeto com toda listagem de plantas para sua implantação. Ah, e caso queira, podemos fazer uma alteração no projeto, sem custo algum!</figcaption>
+                <figcaption class="p-6 max-md:p-8">Enviamos as imagens do projeto com toda listagem de plantas para sua implantação. Ah, e caso queira, podemos fazer uma alteração no projeto, sem custo algum!</figcaption>
             </figure>
         </div>
     </section>
-    <footer class="bg-gray-800 text-white p-8 flex justify-between max-md:flex-col max-md:gap-4">
+    <footer id="contato" class="bg-gray-800 text-white p-8 flex justify-between max-md:flex-col max-md:gap-4">
       <div class="flex flex-col">
         <p class="font-bold">Nome</p>
         <p>Telefone: (11) 1234-5678</p>
@@ -253,13 +250,6 @@
           </svg>
         </a>
     </footer>
-    <script>
-        const btnMenu = document.getElementById('btn-menu')
-        const mobileMenu = document.getElementById('mobile-menu')
-        btnMenu.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden')
-        })
-
-    </script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
