@@ -11,18 +11,19 @@
     <!-- Navegação -->
     <header class="bg-green-900 fixed w-full top-0 z-50 opacity-95">
         <!-- Barra de navegação -->
-        <nav class="flex justify-between p-3 items-center text-amber-50">
-            <div class="flex gap-4 items-center">
-                <a href="#inicio">
-                    <img src="./img/logotipo-1.webp" alt="logotipo da barra navegação">
+        <nav class="flex justify-between w-[98%] mx-auto p-2 items-center text-amber-50">
+            <div class="flex gap-2 items-center">
+                <a href="#">
+                    <img class="w-[72px]" src="./img/logo-plantifix.jpeg" alt="logotipo da barra navegação">
                 </a>
-                <span class="font-title text-xl font-semibold uppercase tracking-wider hover:text-green-500 hover:underline transition">
-                    <a href="#inicio">
+                <span class="font-guiepapai text-lg font-semibold uppercase tracking-widest hover:text-green-500 hover:underline transition">
+                    <a href="#">
                         Plantifix
                     </a>
                 </span>
             </div>
-            <menu class="flex text-lg max-lg:hidden gap-8">
+            <!-- Menu Desktop -->
+            <menu class="flex text-lg max-lg:hidden gap-8 font-guiepapai">
                 <li class="flex gap-3 justify-center items-center">
                     <a class="tracking-wider hover:text-green-500 hover:underline" href="#">Início</a>
                     <a class="tracking-wider hover:text-green-500 hover:underline" href="#como-funciona">Como funciona</a>
@@ -88,14 +89,14 @@
                 <span id="span3" class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
             </button>
         </nav>
+        <!-- Menu Mobile Flutuante -->
         <div id="mobile-menu" class="absolute top-[-300%] duration-500 w-full lg:hidden bg-amber-50 text-green-900">
-            <hr class="mt-5">
             <menu class="ml-2 mt-2 text-lg font-semibold">
                 <li class="flex flex-col gap-1">
-                    <a class="tracking-wider hover:underline hover:text-[#22c55e]" href="">Início</a>
+                    <a class="tracking-wider hover:underline hover:text-[#22c55e]" href="#">Início</a>
                     <a class="tracking-wider hover:underline hover:text-[#22c55e]" href="#como-funciona">Como funciona</a>
-                    <a class="tracking-wider hover:underline hover:text-[#22c55e]" href="">Contato</a>
-                    <a class="tracking-wider uppercase hover:underline hover:text-[#22c55e]" href="">Como iniciar um Projeto</a>
+                    <a class="tracking-wider hover:underline hover:text-[#22c55e]" href="#contato">Contato</a>
+                    <a class="tracking-wider uppercase hover:underline hover:text-[#22c55e]" href="#">Como iniciar um Projeto</a>
                     <li class="flex gap-4 mt-2 pb-2">
                     <a href="">
                         <svg fill="#14532d" version="1.1" id="Capa_1" xmlns="http://www.w3.  org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -153,7 +154,7 @@
         <!-- Conteúdo -->
         <div class="grid lg:grid-cols-2 text-green-900 md:p-8 place-items-center">
             <div class="grid grid-rows-3 items-center lg:gap-10 max-md:pt-8 max-md:px-8 lg:pr-8">
-                <h1 class="lg:text-5xl xl:text-6xl 2xl:text-7xl text-4xl font-medium font-title mb-2">
+                <h1 class="lg:text-4xl xl:text-5xl 2xl:text-6xl text-3xl font-semibold font-guiepapai mb-2">
                     Projetos de jardim, rápidos e práticos
                 </h1>
                 <p class="md:text-2xl lg:text-3xl xl:4xl text-xl">
@@ -168,7 +169,7 @@
     </section>
     <!-- Por que você vai amar a gente -->
     <section class="text-amber-50 bg-green-900 lg:grid-cols-2 lg:gap-4 grid items-center p-8">
-        <h1 class="lg:text-5xl xl:text-6xl 2xl:text-7xl text-4xl font-medium font-title mb-2">Porque você vai amar a gente?</h1>
+        <h1 class="lg:text-4xl xl:text-5xl 2xl:text-6xl text-3xl font-semibold font-guiepapai mb-2">Porque você vai amar a gente?</h1>
         <p class="md:text-2xl lg:text-3xl xl:4xl text-xl leading-relaxed">
             Uma foto vale por 1000 palavras e muitas horas do seu tempo.
             Com a Plantifix você vai entender de forma muito simples como seu projeto vai ficar depois de implantado. Vivemos em um mundo muito dinâmico, onde muitos profissionais vendem idéias de forma complexa e que exigem muito tempo para sua elaboração. Oferecemos aqui a simplicidade das fotomontagens, sem abrir mão de um jardim elaborado por profissionais do paisagismo, que entendem de plantas e da disposição das mesmas em seu espaço.
@@ -176,7 +177,7 @@
     </section>
     <!-- Como Funciona -->
     <section id="como-funciona" class="pt-4 bg-amber-50 text-green-900 font-semibold lg:gap-4 flex flex-col">
-      <h1 class="lg:text-5xl xl:text-6xl 2xl:text-7xl text-4xl font-medium font-title mb-2 self-start p-8">Como funciona?</h1>
+      <h1 class="lg:text-4xl xl:text-5xl 2xl:text-6xl text-3xl font-semibold font-guiepapai mb-2 self-start p-8">Como funciona?</h1>
         <div class="grid xl:grid-cols-4 gap-4 max-md:gap-8 text-2xl self-center">
             <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
                 <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-1.png" alt="Ilustração de Jardim">
@@ -198,9 +199,9 @@
     </section>
     <footer id="contato" class="bg-gray-800 text-white p-8 flex justify-between max-md:flex-col max-md:gap-4">
       <div class="flex flex-col">
-        <p class="font-bold">Nome</p>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Email: nome@email.com</p>
+        <p class="font-bold">Danilo Lorencini</p>
+        <p>Telefone: (11) 97403-0052</p>
+        <p>Email: plantifix@gmail.com</p>
       </div>
       <div class="flex space-x-4">
         <a href="https://wa.me/551112345678" target="_blank">

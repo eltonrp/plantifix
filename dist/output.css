@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
@@ -560,16 +562,13 @@ video {
   top: 100%;
 }
 
-.left-\[-300\%\]{
-  left: -300%;
-}
-
-.left-\[100\%\]{
-  left: 100%;
-}
-
 .z-50{
   z-index: 50;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-2{
@@ -582,10 +581,6 @@ video {
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
 }
 
 .flex{
@@ -620,8 +615,20 @@ video {
   width: 2rem;
 }
 
+.w-\[72px\]{
+  width: 72px;
+}
+
+.w-\[92\%\]{
+  width: 92%;
+}
+
 .w-full{
   width: 100%;
+}
+
+.w-\[98\%\]{
+  width: 98%;
 }
 
 .max-w-sm{
@@ -691,6 +698,10 @@ video {
   gap: 2rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -741,16 +752,21 @@ video {
   padding: 0.5rem;
 }
 
-.p-3{
-  padding: 0.75rem;
-}
-
 .p-6{
   padding: 1.5rem;
 }
 
 .p-8{
   padding: 2rem;
+}
+
+.p-1{
+  padding: 0.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pb-2{
@@ -763,6 +779,10 @@ video {
 
 .pt-4{
   padding-top: 1rem;
+}
+
+.font-guiepapai{
+  font-family: Montserrat;
 }
 
 .font-title{
@@ -789,6 +809,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -811,6 +836,10 @@ video {
 
 .tracking-wider{
   letter-spacing: 0.05em;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
 }
 
 .text-amber-50{
@@ -842,10 +871,6 @@ video {
 
 .duration-500{
   transition-duration: 500ms;
-}
-
-.duration-300{
-  transition-duration: 300ms;
 }
 
 .hover\:border-gray-400:hover{
@@ -966,6 +991,11 @@ video {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1280px){
@@ -985,11 +1015,31 @@ video {
     font-size: 3.75rem;
     line-height: 1;
   }
+
+  .xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1536px){
   .\32xl\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .\32xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .\32xl\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
