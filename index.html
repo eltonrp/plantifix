@@ -1,256 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/style.css">
-    <title>Plantifix</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/style.css">
+  <title>Plantifix | Soluções em fotomontagem para Paisagismo</title>
 </head>
 <body>
-    <!-- Navegação -->
-    <header class="bg-green-900 fixed w-full top-0 z-50 opacity-95">
-        <!-- Barra de navegação -->
-        <nav class="flex justify-between w-[98%] mx-auto p-2 items-center text-amber-50">
-            <div class="flex gap-2 items-center">
-                <a href="#">
-                    <img class="w-[72px]" src="./img/logo-plantifix.jpeg" alt="logotipo da barra navegação">
-                </a>
-                <span class="font-guiepapai text-lg font-semibold uppercase tracking-widest hover:text-green-500 hover:underline transition">
-                    <a href="#">
-                        Plantifix
-                    </a>
-                </span>
-            </div>
-            <!-- Menu Desktop -->
-            <menu class="flex text-lg max-lg:hidden gap-8 font-guiepapai">
-                <li class="flex gap-3 justify-center items-center">
-                    <a class="tracking-wider hover:text-green-500 hover:underline" href="#">Início</a>
-                    <a class="tracking-wider hover:text-green-500 hover:underline" href="#como-funciona">Como funciona</a>
-                    <a class="tracking-wider hover:text-green-500 hover:underline" href="#contato">Contato</a>
-                    <a class="tracking-wider uppercase hover:text-green-500 hover:underline" href="#">Como iniciar um Projeto</a>
-                </li>
-                <li class="flex gap-3">
-                    <!-- SVG WhatsApp -->
-                    <a href="">
-                        <svg fill="#FFFBEB" version="1.1" id="Capa_1" xmlns="http://www.w3.  org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                        width="24px" height="24px" viewBox="0 0 30.667 30.667"
-                        xml:space="preserve">
-                        <g>
-                        <path d="M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017
-                        c-1.37-2.25-2.159-4.892-2.159-7.712C0.559,6.688,7.297,0,15.613,0C23.928,0.002,30.667,6.689,30.667,14.939z M15.61,2.382
-                        c-6.979,0-12.656,5.634-12.656,12.56c0,2.748,0.896,5.292,2.411,7.362l-1.58,4.663l4.862-1.545c2,1.312,4.393,2.076,6.963,2.076
-                        c6.979,0,12.658-5.633,12.658-12.559C28.27,8.016,22.59,2.382,15.61,2.382z M23.214,18.38c-0.094-0.151-0.34-0.243-0.708-0.427
-                        c-0.367-0.184-2.184-1.069-2.521-1.189c-0.34-0.123-0.586-0.185-0.832,0.182c-0.243,0.367-0.951,1.191-1.168,1.437
-                        c-0.215,0.245-0.43,0.276-0.799,0.095c-0.369-0.186-1.559-0.57-2.969-1.817c-1.097-0.972-1.838-2.169-2.052-2.536
-                        c-0.217-0.366-0.022-0.564,0.161-0.746c0.165-0.165,0.369-0.428,0.554-0.643c0.185-0.213,0.246-0.364,0.369-0.609
-                        c0.121-0.245,0.06-0.458-0.031-0.643c-0.092-0.184-0.829-1.984-1.138-2.717c-0.307-0.732-0.614-0.611-0.83-0.611
-                        c-0.215,0-0.461-0.03-0.707-0.03S9.897,8.215,9.56,8.582s-1.291,1.252-1.291,3.054c0,1.804,1.321,3.543,1.506,3.787
-                        c0.186,0.243,2.554,4.062,6.305,5.528c3.753,1.465,3.753,0.976,4.429,0.914c0.678-0.062,2.184-0.885,2.49-1.739
-                        C23.307,19.268,23.307,18.533,23.214,18.38z"/>
-                        </g>
-                        </svg>
-                    
-                    </a>
-                    <!-- SVG Instagram -->
-                    <a href="">
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#FFFBEB"/>
-                            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#FFFBEB"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#FFFBEB"/>
-                        </svg>
-                    </a>
-                    <!-- SVG Email -->
-                    <a href="">
-                        <svg fill="#FFFBEB" height="24px" width="24px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	                    viewBox="0 0 512 512"  xml:space="preserve">
-                        <g>
-                        <path class="st0" d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345
-                        c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345
-                        C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203
-                        c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958
-                        c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064
-                        c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571
-                        c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637
-                        L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136
-                        C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435
-                        C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281,0-12.158-1.651-17.174-4.552l147.978-128.959
-                        l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959
-                        C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8
-                        V385.92z"/>
-                        </g>
-                        </svg>
-                    </a>
-                </li>
-            </menu>
-            <button type="button" id="btn-menu" onclick="onToggleMenu(this)" class="flex flex-col gap-1 border-amber-50 p-2 rounded-lg border lg:hidden hover:border-gray-400 transition">
-                <span id="span1" class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
-                <span id="span2" class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
-                <span id="span3" class="bg-amber-50 w-6 h-[3px] rounded-full"></span>
-            </button>
-        </nav>
-        <!-- Menu Mobile Flutuante -->
-        <div id="mobile-menu" class="absolute top-[-300%] duration-500 w-full lg:hidden bg-amber-50 text-green-900">
-            <menu class="ml-2 mt-2 text-lg font-semibold">
-                <li class="flex flex-col gap-1">
-                    <a class="tracking-wider hover:underline hover:text-[#22c55e]" href="#">Início</a>
-                    <a class="tracking-wider hover:underline hover:text-[#22c55e]" href="#como-funciona">Como funciona</a>
-                    <a class="tracking-wider hover:underline hover:text-[#22c55e]" href="#contato">Contato</a>
-                    <a class="tracking-wider uppercase hover:underline hover:text-[#22c55e]" href="#">Como iniciar um Projeto</a>
-                    <li class="flex gap-4 mt-2 pb-2">
-                    <a href="">
-                        <svg fill="#14532d" version="1.1" id="Capa_1" xmlns="http://www.w3.  org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                        width="24px" height="24px" viewBox="0 0 30.667 30.667"
-                        xml:space="preserve">
-                        <g>
-                        <path d="M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017
-                        c-1.37-2.25-2.159-4.892-2.159-7.712C0.559,6.688,7.297,0,15.613,0C23.928,0.002,30.667,6.689,30.667,14.939z M15.61,2.382
-                        c-6.979,0-12.656,5.634-12.656,12.56c0,2.748,0.896,5.292,2.411,7.362l-1.58,4.663l4.862-1.545c2,1.312,4.393,2.076,6.963,2.076
-                        c6.979,0,12.658-5.633,12.658-12.559C28.27,8.016,22.59,2.382,15.61,2.382z M23.214,18.38c-0.094-0.151-0.34-0.243-0.708-0.427
-                        c-0.367-0.184-2.184-1.069-2.521-1.189c-0.34-0.123-0.586-0.185-0.832,0.182c-0.243,0.367-0.951,1.191-1.168,1.437
-                        c-0.215,0.245-0.43,0.276-0.799,0.095c-0.369-0.186-1.559-0.57-2.969-1.817c-1.097-0.972-1.838-2.169-2.052-2.536
-                        c-0.217-0.366-0.022-0.564,0.161-0.746c0.165-0.165,0.369-0.428,0.554-0.643c0.185-0.213,0.246-0.364,0.369-0.609
-                        c0.121-0.245,0.06-0.458-0.031-0.643c-0.092-0.184-0.829-1.984-1.138-2.717c-0.307-0.732-0.614-0.611-0.83-0.611
-                        c-0.215,0-0.461-0.03-0.707-0.03S9.897,8.215,9.56,8.582s-1.291,1.252-1.291,3.054c0,1.804,1.321,3.543,1.506,3.787
-                        c0.186,0.243,2.554,4.062,6.305,5.528c3.753,1.465,3.753,0.976,4.429,0.914c0.678-0.062,2.184-0.885,2.49-1.739
-                        C23.307,19.268,23.307,18.533,23.214,18.38z"/>
-                        </g>
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#14532d"/>
-                            <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#14532d"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#14532d"/>
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg fill="#14532d" height="24px" width="24px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	                    viewBox="0 0 512 512"  xml:space="preserve">
-                        <g>
-                        <path class="st0" d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345
-                        c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345
-                        C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203
-                        c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958
-                        c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064
-                        c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571
-                        c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637
-                        L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136
-                        C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435
-                        C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281,0-12.158-1.651-17.174-4.552l147.978-128.959
-                        l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959
-                        C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8
-                        V385.92z"/>
-                        </g>
-                        </svg>
-                    </a>
-                    </li>
-                </li>
-            </menu>
-        </div>
-    </header>
-    <!-- Projetos de jardim, rápidos e práticos. -->
-    <section id="inicio" class="relative pt-16 bg-amber-50">
-        <!-- Conteúdo -->
-        <div class="grid lg:grid-cols-2 text-green-900 md:p-8 place-items-center">
-            <div class="grid grid-rows-3 items-center lg:gap-10 max-md:pt-8 max-md:px-8 lg:pr-8">
-                <h1 class="lg:text-4xl xl:text-5xl 2xl:text-6xl text-3xl font-semibold font-guiepapai mb-2">
-                    Projetos de jardim, rápidos e práticos
-                </h1>
-                <p class="md:text-2xl lg:text-3xl xl:4xl text-xl">
-                    Tenha um projeto de jardim com um time de profissionais com ampla experiência em paisagismo. Do tamanho do seu sonho, do tamanho do seu bolso.
-                </p>
-                <button type="button" class="max-w-sm border p-2 rounded-lg hover:bg-green-700 transition uppercase bg-green-900 text-amber-50">Entre em contato</button>
-            </div>
-            <div class="grid place-content-center max-md:w-full">
-                <img src="./img/jardim-1.webp" alt="ilustração de projeto de jardim">
-            </div>
-        </div>
-    </section>
-    <!-- Por que você vai amar a gente -->
-    <section class="text-amber-50 bg-green-900 lg:grid-cols-2 lg:gap-4 grid items-center p-8">
-        <h1 class="lg:text-4xl xl:text-5xl 2xl:text-6xl text-3xl font-semibold font-guiepapai mb-2">Porque você vai amar a gente?</h1>
-        <p class="md:text-2xl lg:text-3xl xl:4xl text-xl leading-relaxed">
-            Uma foto vale por 1000 palavras e muitas horas do seu tempo.
-            Com a Plantifix você vai entender de forma muito simples como seu projeto vai ficar depois de implantado. Vivemos em um mundo muito dinâmico, onde muitos profissionais vendem idéias de forma complexa e que exigem muito tempo para sua elaboração. Oferecemos aqui a simplicidade das fotomontagens, sem abrir mão de um jardim elaborado por profissionais do paisagismo, que entendem de plantas e da disposição das mesmas em seu espaço.
-        </p>
-    </section>
-    <!-- Como Funciona -->
-    <section id="como-funciona" class="pt-4 bg-amber-50 text-green-900 font-semibold lg:gap-4 flex flex-col">
-      <h1 class="lg:text-4xl xl:text-5xl 2xl:text-6xl text-3xl font-semibold font-guiepapai mb-2 self-start p-8">Como funciona?</h1>
-        <div class="grid xl:grid-cols-4 gap-4 max-md:gap-8 text-2xl self-center">
-            <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
-                <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-1.png" alt="Ilustração de Jardim">
-                <figcaption class="p-6 max-md:p-8">Você nos envia fotos com as medidas dos espaços que pretende transformar</figcaption>
-            </figure>
-            <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
-                <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-2.png" alt="Aperto de mão">
-                <figcaption class="p-6 max-md:p-8">Você receberá uma proposta de valor com base em sua necessidade</figcaption>
-            </figure>
-            <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
-                <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-3.png" alt="Mulher concentrada">
-                <figcaption class="p-6 max-md:p-8">Enviamos um formulário que será nosso “norte” para elaborarmos um projeto exatamente do jeito que deseja</figcaption>
-            </figure>
-            <figure class="flex flex-col xl:max-w-xs lg:max-w-2xl md:max-w-xl max-md:w-full">
-                <img class="xl:max-h-[300px] lg:max-h-[572px] md:max-h-96 min-h-[300px]" src="./img/como-funciona-4.png" alt="Jardim reformado">
-                <figcaption class="p-6 max-md:p-8">Enviamos as imagens do projeto com toda listagem de plantas para sua implantação. Ah, e caso queira, podemos fazer uma alteração no projeto, sem custo algum!</figcaption>
-            </figure>
-        </div>
-    </section>
-    <footer id="contato" class="bg-gray-800 text-white p-8 flex justify-between max-md:flex-col max-md:gap-4">
-      <div class="flex flex-col">
-        <p class="font-bold">Danilo Lorencini</p>
-        <p>Telefone: (11) 97403-0052</p>
-        <p>Email: plantifix@gmail.com</p>
+  <header class="bg-green-900">
+    <nav class="max-w-5xl mx-auto flex max-lg:flex-col items-center justify-between font-guiepapai max-lg:justify-around max-xl:px-3 gap-12 max-lg:py-8 py-6">
+      <div class="flex items-center max-lg:flex-col gap-2">
+        <img class="w-20" src="./img/logo-plantifix-svg.svg" alt="Logo Plantifix">
+        <span>
+          <a class="hover:opacity-60 duration-300 text-amber-50 text-2xl font-medium tracking-widest" href="#">Plantifix</a>
+        </span>
       </div>
-      <div class="flex space-x-4">
-        <a href="https://wa.me/551112345678" target="_blank">
-          <svg class="h-8 w-8" fill="#FFFBEB" version="1.1" id="Capa_1" xmlns="http://www.w3.  org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-          viewBox="0 0 30.667 30.667"
-          xml:space="preserve">
-          <g>
-              <path d="M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017
-              c-1.37-2.25-2.159-4.892-2.159-7.712C0.559,6.688,7.297,0,15.613,0C23.928,0.002,30.667,6.689,30.667,14.939z M15.61,2.382
-              c-6.979,0-12.656,5.634-12.656,12.56c0,2.748,0.896,5.292,2.411,7.362l-1.58,4.663l4.862-1.545c2,1.312,4.393,2.076,6.963,2.076
-              c6.979,0,12.658-5.633,12.658-12.559C28.27,8.016,22.59,2.382,15.61,2.382z M23.214,18.38c-0.094-0.151-0.34-0.243-0.708-0.427
-              c-0.367-0.184-2.184-1.069-2.521-1.189c-0.34-0.123-0.586-0.185-0.832,0.182c-0.243,0.367-0.951,1.191-1.168,1.437
-              c-0.215,0.245-0.43,0.276-0.799,0.095c-0.369-0.186-1.559-0.57-2.969-1.817c-1.097-0.972-1.838-2.169-2.052-2.536
-              c-0.217-0.366-0.022-0.564,0.161-0.746c0.165-0.165,0.369-0.428,0.554-0.643c0.185-0.213,0.246-0.364,0.369-0.609
-              c0.121-0.245,0.06-0.458-0.031-0.643c-0.092-0.184-0.829-1.984-1.138-2.717c-0.307-0.732-0.614-0.611-0.83-0.611
-              c-0.215,0-0.461-0.03-0.707-0.03S9.897,8.215,9.56,8.582s-1.291,1.252-1.291,3.054c0,1.804,1.321,3.543,1.506,3.787
-              c0.186,0.243,2.554,4.062,6.305,5.528c3.753,1.465,3.753,0.976,4.429,0.914c0.678-0.062,2.184-0.885,2.49-1.739
-              C23.307,19.268,23.307,18.533,23.214,18.38z"/>
-          </g>
-          </svg>
+      <!-- Menu Principal -->
+      <menu class="">
+        <li class="text-amber-50 flex gap-6 text-base max-lg:flex-col max-lg:items-center tracking-wide font-semibold">
+          <a class="hover:opacity-60 duration-300" href="#">Como Funciona</a>
+          <a class="hover:opacity-60 duration-300" href="#">Contato</a>
+          <a class="uppercase hover:opacity-60 duration-300" href="#">Iniciar Um Projeto</a>
+        </li>
+      </menu>
+      <!-- Menu Social -->
+      <menu class="flex items-center gap-6">
+        <a class="rounded-full cursor-pointer" href="#">
+          <img class="w-6 hover:opacity-60 duration-300" src="./img/logo-whatsapp.svg" alt="">
         </a>
-        <a href="https://www.instagram.com/nome" target="_blank">
-          <svg class="h-8 w-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#FFFBEB"/>
-              <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#FFFBEB"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#FFFBEB"/>
-          </svg>
+        <a class="rounded-full cursor-pointer" href="#">
+          <img class="w-6 hover:opacity-60 duration-300" src="./img/logo-instagram.svg" alt="">
         </a>
-        <a href="https://www.facebook.com/nome" target="_blank">
-          <svg fill="#FFFBEB" class="h-8 w-8" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-          viewBox="0 0 512 512"  xml:space="preserve">
-          <g>
-          <path class="st0" d="M510.678,112.275c-2.308-11.626-7.463-22.265-14.662-31.054c-1.518-1.915-3.104-3.63-4.823-5.345
-          c-12.755-12.818-30.657-20.814-50.214-20.814H71.021c-19.557,0-37.395,7.996-50.21,20.814c-1.715,1.715-3.301,3.43-4.823,5.345
-          C8.785,90.009,3.63,100.649,1.386,112.275C0.464,116.762,0,121.399,0,126.087V385.92c0,9.968,2.114,19.55,5.884,28.203
-          c3.497,8.26,8.653,15.734,14.926,22.001c1.59,1.586,3.169,3.044,4.892,4.494c12.286,10.175,28.145,16.32,45.319,16.32h369.958
-          c17.18,0,33.108-6.145,45.323-16.384c1.718-1.386,3.305-2.844,4.891-4.43c6.27-6.267,11.425-13.741,14.994-22.001v-0.064
-          c3.769-8.653,5.812-18.171,5.812-28.138V126.087C512,121.399,511.543,116.762,510.678,112.275z M46.509,101.571
-          c6.345-6.338,14.866-10.175,24.512-10.175h369.958c9.646,0,18.242,3.837,24.512,10.175c1.122,1.129,2.179,2.387,3.112,3.637
-          L274.696,274.203c-5.348,4.687-11.954,7.002-18.696,7.002c-6.674,0-13.276-2.315-18.695-7.002L43.472,105.136
-          C44.33,103.886,45.387,102.7,46.509,101.571z M36.334,385.92V142.735L176.658,265.15L36.405,387.435
-          C36.334,386.971,36.334,386.449,36.334,385.92z M440.979,420.597H71.021c-6.281,0-12.158-1.651-17.174-4.552l147.978-128.959
-          l13.815,12.018c11.561,10.046,26.028,15.134,40.36,15.134c14.406,0,28.872-5.088,40.432-15.134l13.808-12.018l147.92,128.959
-          C453.137,418.946,447.26,420.597,440.979,420.597z M475.666,385.92c0,0.529,0,1.051-0.068,1.515L335.346,265.221L475.666,142.8
-          V385.92z"/>
-          </g>
-          </svg>
+        <a class="rounded-full cursor-pointer" href="#">
+          <img class="w-7 hover:opacity-60 duration-300" src="./img/logo-email.svg" alt="">
         </a>
-    </footer>
-    <script src="./js/script.js"></script>
+        <a class="rounded-full cursor-pointer" href="#">
+          <img class="w-7 hover:opacity-60 duration-300" src="./img/logo-youtube.svg" alt="">
+        </a>
+      </menu>
+      <!-- Menu Mobile -->
+      <!-- <button type="button" class="border flex flex-col gap-1 p-2 rounded-md hover:bg-green-700 duration-300 lg:hidden">
+        <span class="w-6 bg-amber-50 h-1 rounded-full"></span>
+        <span class="w-6 bg-amber-50 h-1 rounded-full"></span>
+        <span class="w-6 bg-amber-50 h-1 rounded-full"></span>
+      </button> -->
+    </nav>
+  </header>
+  <script src="./js/script.js"></script>
 </body>
 </html>
