@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./dist/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="./dist/style.css">
+  <link rel="stylesheet" href="./src/style.css">
   <title>Plantifix | Soluções em fotomontagem para Paisagismo</title>
 </head>
-<body class="bg-amber-50">
+<body>
   <header class="bg-green-900">
     <nav class="max-w-5xl mx-auto flex max-lg:flex-col items-center justify-between font-guiepapai max-lg:justify-around max-xl:px-3 gap-12 max-lg:py-8 py-6">
       <div class="flex items-center max-lg:flex-col gap-2">
@@ -49,18 +49,69 @@
       </button> -->
     </nav>
   </header>
-  <section id="inicio" class="max-w-5xl mx-auto flex lg:columns-2 max-lg:flex-col py-8 gap-8 items-center">
-    <div class="text-green-900 gap-12 flex flex-col max-lg:px-8">
-      <h1 class="lg:text-6xl max-lg:text-4xl font-semibold">Projetos de jardim, rápidos e práticos</h1>
-      <p class="lg:text-2xl max-lg:text-xl">
-        Tenha um projeto de jardim com um time de profissionais com ampla experiência em paisagismo. Do tamanho do seu sonho, do tamanho do seu bolso
-      </p>
-      <button type="button" class="border max-w-sm py-2 rounded-lg hover:bg-green-600 transition uppercase bg-green-900 text-amber-50 duration-300">
-        entre em contato
-      </button>
+
+  <!-- Seção Inicial -->
+  <section id="inicio" class="w-full bg-amber-50">
+    <div class="max-w-5xl mx-auto flex lg:columns-2 max-lg:flex-col py-8 gap-8 items-center">
+      <div class="text-green-900 gap-12 flex flex-col max-lg:px-8">
+        <h1 class="lg:text-6xl max-lg:text-4xl font-semibold">Projetos de jardim, rápidos e práticos</h1>
+        <p class="lg:text-2xl max-lg:text-xl">
+          Tenha um projeto de jardim com um time de profissionais com ampla experiência em paisagismo. Do tamanho do seu sonho, do tamanho do seu bolso
+        </p>
+        <button type="button" class="border max-w-sm py-2 rounded-lg hover:bg-green-600 transition uppercase bg-green-900 text-amber-50 duration-300">
+          entre em contato
+        </button>
+      </div>
+      <img class="max-w-lg w-full" src="./img/jardim-1.webp" alt="ilustração de projeto de jardim">
     </div>
-    <img class="max-w-lg w-full" src="./img/jardim-1.webp" alt="ilustração de projeto de jardim">
   </section>
-  <script src="./js/script.js"></script>
+
+  <!-- Seção de Apresentação -->
+  <section id="apresentacao" class="bg-green-900 w-full">
+    <div class="max-w-5xl mx-auto flex lg:columns-2 max-lg:flex-col py-8 gap-8 items-center justify-center ">
+      <div class="text-amber-50 gap-12 flex flex-col max-lg:px-8">
+        <h1 class="lg:text-6xl max-lg:text-4xl font-semibold">Porque você vai amar a gente?</h1>
+        <p class="lg:text-2xl max-lg:text-xl">
+          Uma foto vale por 1000 palavras e muitas horas do seu tempo. Na Plantifix, oferecemos a simplicidade da respresentação de uma fotomontagem, sem abrir mão de um jardim especialmente elaborado por profissionais do paisagismo. Observem esse exemplo de respresentação e como ela faz brotar todo potencial de seu jardim. Aqui conectamos seu desejo à nossa experiência e amor em criar e transformar paisagens.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider -->
+  <section class="bg-amber-50 flex justify-center relative">
+    <div class="slider w-[512px] h-[512px] overflow-hidden">
+      <div class="slides w-[200%] h-[512px] flex">
+        <!-- Radio Buttons -->
+        <input class="hidden" type="radio" name="radio-btn" id="radio1">
+        <input class="hidden" type="radio" name="radio-btn" id="radio2">
+        <!-- Fim Radio Buttons -->
+
+        <!-- Slide Images -->
+        <div class="slide first w-[50%] relative">
+          <p class="absolute top-5 left-[10%] text-xl bg-white rounded px-4 py-1 text-green-900 font-bold">Antes</p>
+          <img src="./img/como-funciona-1.png" alt="Imagem 1">
+        </div>
+        <div class="slide w-[50%] relative">
+          <p class="absolute top-5 left-[10%] text-xl bg-white rounded px-4 py-1 text-green-900 font-bold">Depois</p>
+          <img src="./img/como-funciona-4.png" alt="Imagem 2">
+        </div>
+
+        <!-- Navigation auto -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn1"></div>
+        </div>
+        
+        <div class="manual-navigation absolute flex justify-center w-[512px] gap-4 top-[460px]">
+          <label for="radio1" class="manual-btn h-[5px] p-[5px] border-2 border-white rounded-lg cursor-pointer hover:bg-white duration-300"></label>
+          <label for="radio2" class="manual-btn h-[5px] p-[5px] border-2 border-white rounded-lg cursor-pointer hover:bg-white duration-300"></label>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  
 </body>
 </html>
