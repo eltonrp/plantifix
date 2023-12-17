@@ -4,8 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ['Rubik'],
-        guiepapai: ['Montserrat']
+        guiepapai: ['Montserrat'],
       }
     },
   },
